@@ -1,0 +1,69 @@
+[submodule "trailblazer"]
+	path = trailblazer
+	url = git@github.com:trailblazer/trailblazer.git
+[submodule "trailblazer-rails"]
+	path = trailblazer-rails
+	url = git@github.com:trailblazer/trailblazer-rails
+[submodule "reform"]
+	path = reform
+	url = git@github.com:trailblazer/reform
+[submodule "cells"]
+	path = cells
+	url = git@github.com:trailblazer/cells
+[submodule "cells-slim"]
+	path = cells-slim
+	url = git@github.com:trailblazer/cells-slim
+[submodule "cells-rails"]
+	path = cells-rails
+	url = git@github.com:trailblazer/cells-rails
+[submodule "reform-rails"]
+	path = reform-rails
+	url = git@github.com:trailblazer/reform-rails
+[submodule "roar"]
+	path = roar
+	url = git@github.com:trailblazer/roar
+[submodule "trailblazer-macro-contract"]
+	path = trailblazer-macro-contract
+	url = git@github.com:trailblazer/trailblazer-macro-contract
+[submodule "trailblazer-macro"]
+	path = trailblazer-macro
+	url = git@github.com:trailblazer/trailblazer-macro
+[submodule "trailblazer-transform"]
+	path = trailblazer-transform
+	url = git@github.com:trailblazer/trailblazer-transform
+[submodule "trailblazer-future"]
+	path = trailblazer-future
+	url = git@github.com:trailblazer/trailblazer-future
+[submodule "trailblazer-activity"]
+	path = trailblazer-activity
+	url = git@github.com:trailblazer/trailblazer-activity
+[submodule "trailblazer-operation"]
+	path = trailblazer-operation
+	url = git@github.com:trailblazer/trailblazer-operation
+[submodule "trailblazer-finder"]
+	path = trailblazer-finder
+	url = git@github.com:trailblazer/trailblazer-finder
+[submodule "trailblazer-test"]
+	path = trailblazer-test
+	url = git@github.com:trailblazer/trailblazer-test
+[submodule "trailblazer-context"]
+	path = trailblazer-context
+	url = git@github.com:trailblazer/trailblazer-context
+[submodule "trailblazer-loader"]
+	path = trailblazer-loader
+	url = git@github.com:trailblazer/trailblazer-loader
+[submodule "cells-hamlit"]
+	path = cells-hamlit
+	url = git@github.com:trailblazer/cells-hamlit
+[submodule "trailblazer-endpoint"]
+	path = trailblazer-endpoint
+	url = git@github.com:trailblazer/trailblazer-endpoint
+[submodule "trailblazer-compat"]
+	path = trailblazer-compat
+	url = git@github.com:trailblazer/trailblazer-compat
+[submodule "trailblazer-cells"]
+	path = trailblazer-cells
+	url = git@github.com:trailblazer/trailblazer-cells
+[submodule "trailblazer-generator"]
+	path = trailblazer-generator
+	url = git@github.com:trailblazer/trailblazer-generator
