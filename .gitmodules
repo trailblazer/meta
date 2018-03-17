@@ -67,3 +67,6 @@
 [submodule "trailblazer-generator"]
 	path = trailblazer-generator
 	url = git@github.com:trailblazer/trailblazer-generator
+[submodule "cells-haml"]
+	path = cells-haml
+	url = git@github.com:trailblazer/cells-haml.git
