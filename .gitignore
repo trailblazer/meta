@@ -1,3 +1,6 @@
 .idea
 .bin
 gems.locked
+.rbenv-vars
+tmp
+.bundle
