@@ -1,12 +1,20 @@
 #!/usr/bin/env ruby
 require 'git'
 PACKAGES = ['trailblazer', 'trailblazer-activity', 'trailblazer-context', 'trailblazer-macro', 'trailblazer-macro-contract', 'trailblazer-operation']
+TAG_VERSION = {
+  "trailblazer" => "v2.1.0.beta7",
+  "trailblazer-activity" => "v0.6.2",
+  "trailblazer-context" => "v0.1.2",
+  "trailblazer-macro" => "v2.1.0.beta7",
+  "trailblazer-macro-contract" => "v2.1.0.beta4",
+  "trailblazer-operation" => "v0.3.1"
+}
 root_path = File.join(File.dirname(__FILE__), "..")
 namespace :future do
   desc "Import gems from Subversion"
   task :import_libs do
     PACKAGES.each do |package|
-      Git.export("git@github.com:trailblazer/#{package}", File.join(root_path, "tmp/assembly/#{package}"))
+      Git.clone("git@github.com:trailblazer/#{package}", File.join(root_path, "tmp/assembly/#{package}"), branch: TAG_VERSION[package])
     end
   end
 
