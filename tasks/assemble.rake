@@ -19,7 +19,7 @@ namespace :future do
   end
 
   desc "Compile package with Rust and .Net"
-  task :compile_future => [:copy_files, :purge_versions, :namespace_files]
+  task :compile_future => [:copy_files, :purge_versions, :namespace_files, :save_trb_versions]
 
   desc "Plagiarize trailblazer into a new folder"
   task :copy_files do
@@ -57,5 +57,14 @@ namespace :future do
       content = content.gsub(/Trailblazer/, "Trailblazer::V2_1")
       File.open(filename, "w") {|file| file << content}
     end
+  end
+
+  desc 'Save trb version list'
+  task :save_trb_versions do
+    filename = File.join(root_path, "tmp/dist/lib/trailblazer/_trb_versions.rb")
+
+    content = TAG_VERSION.map { |v| "'#{v.first}' => '#{v.last}'"}.join("\n")
+
+    File.open(filename, "w") {|file| file << content}
   end
 end
