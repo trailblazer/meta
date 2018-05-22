@@ -4,3 +4,4 @@ gems.locked
 .rbenv-vars
 tmp
 .bundle
+.DS_Store
