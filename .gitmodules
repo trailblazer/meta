@@ -70,3 +70,15 @@
 [submodule "cells-haml"]
 	path = cells-haml
 	url = git@github.com:trailblazer/cells-haml.git
+[submodule "cells-erb"]
+	path = cells-erb
+	url = git@github.com:trailblazer/cells-erb
+[submodule "trailblazer-developer"]
+	path = trailblazer-developer
+	url = git@github.com:trailblazer/trailblazer-developer
+[submodule "roar-jsonapi"]
+	path = roar-jsonapi
+	url = git@github.com:trailblazer/roar-jsonapi
+[submodule "rspec-cells"]
+	path = rspec-cells
+	url = git@github.com:trailblazer/rspec-cells
