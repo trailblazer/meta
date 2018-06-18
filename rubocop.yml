@@ -86,3 +86,14 @@ Metrics/BlockLength:
     - "spec/**/*"
     - "test/**/*"
     - "*.gemspec" # definitely not in the gemspec
+Metrics/MethodLength:
+  Max: 20
+Lint/UnreachableCode:
+  Description: 'Unreachable code.'
+  Enabled: false
+Lint/Void:
+  Enabled: false
+Layout/AlignHash:
+  EnforcedLastArgumentHashStyle: ignore_implicit
+Metrics/AbcSize:
+  Max: 25
