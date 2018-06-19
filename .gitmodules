@@ -82,3 +82,6 @@
 [submodule "rspec-cells"]
 	path = rspec-cells
 	url = git@github.com:trailblazer/rspec-cells
+[submodule "cells-template"]
+	path = cells-template
+	url = git@github.com:trailblazer/cells-template.git
