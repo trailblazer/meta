@@ -6,7 +6,8 @@ PACKAGES = {
   "trailblazer-context" => ENV.fetch("TRAILBLAZER_CONTEXT_ASSEMBLE_VERSION", "master"),
   "trailblazer-macro" => ENV.fetch("TRAILBLAZER_MACRO_ASSEMBLE_VERSION", "master"),
   "trailblazer-macro-contract" => ENV.fetch("TRAILBLAZER_MACRO_CONTRACT_ASSEMBLE_VERSION", "master"),
-  "trailblazer-operation" => ENV.fetch("TRAILBLAZER_OPERATION_ASSEMBLE_VERSION", "master")
+  "trailblazer-operation" => ENV.fetch("TRAILBLAZER_OPERATION_ASSEMBLE_VERSION", "master"),
+  "trailblazer-rails" => ENV.fetch("TRAILBLAZER_RAILS_ASSEMBLE_VERSION", "master")
 }.freeze
 
 root_path = File.join(File.dirname(__FILE__), "..")
