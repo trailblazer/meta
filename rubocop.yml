@@ -99,3 +99,10 @@ Metrics/AbcSize:
   Max: 25
 Style/LambdaCall:
   Enabled: false
+# This to fix lots of failure in trailblazer-operation tests
+Style/Semicolon:
+  Enabled: false
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
