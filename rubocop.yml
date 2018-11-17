@@ -107,3 +107,8 @@ Naming/UncommunicativeMethodParamName:
   Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
+Layout/LeadingCommentSpace:
+  Exclude:
+    - 'test/docs/**/*'
+Layout/AlignHash:
+  EnforcedHashRocketStyle: table
