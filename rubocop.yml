@@ -113,3 +113,5 @@ Layout/AlignHash:
   EnforcedHashRocketStyle: table
 Style/FrozenStringLiteralComment:
   Enabled: false
+Layout/AlignHash:
+  EnforcedColonStyle: table
