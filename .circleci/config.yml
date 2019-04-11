@@ -1,0 +1,410 @@
+version: 2
+jobs:
+  bundle_dependencies:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+    working_directory: ~/trailblazer
+    steps:
+      - checkout
+      -
+        run:
+          name: 'Fetch submodules'
+          command: 'git submodule init && git submodule update'
+      -
+        restore_cache:
+          keys:
+            - bundle-v1-cache
+      -
+        run:
+          name: 'Install ruby dependencies'
+          command: 'git submodule foreach ''bundle check --path ~/trailblazer/bundle || bundle install --path ~/trailblazer/bundle'''
+      -
+        save_cache:
+          paths:
+            - ~/trailblazer/bundle
+          key: bundle-v1-cache
+      -
+        persist_to_workspace:
+          root: ..
+          paths:
+            - trailblazer
+  cells:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd cells && bundle install --path $GEM_HOME && bundle exec rake'
+  cells-erb:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd cells-erb && bundle install --path $GEM_HOME && bundle exec rake'
+  cells-haml:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd cells-haml && bundle install --path $GEM_HOME && bundle exec rake'
+  cells-hamlit:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd cells-hamlit && bundle install --path $GEM_HOME && bundle exec rake'
+  cells-slim:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd cells-slim && bundle install --path $GEM_HOME && bundle exec rake'
+  cells-rails:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd cells-rails && bundle install --path $GEM_HOME && bundle exec rake'
+  reform:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd reform && bundle install --path $GEM_HOME && bundle exec rake'
+  reform-rails:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+      -
+        image: 'circleci/mongo:4-xenial-ram'
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd reform-rails && bundle install --path $GEM_HOME && bundle exec rake'
+  roar:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd roar && bundle install --path $GEM_HOME && bundle exec rake'
+  roar-jsonapi:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd roar-jsonapi && bundle install --path $GEM_HOME && bundle exec rake'
+  representable:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd representable && bundle install --path $GEM_HOME && bundle exec rake'
+  trailblazer-operation:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd trailblazer-operation && bundle install --path $GEM_HOME && bundle exec rake'
+  trailblazer-macro:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd trailblazer-macro && bundle install --path $GEM_HOME && bundle exec rake'
+  trailblazer-macro-contract:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd trailblazer-macro-contract && bundle install --path $GEM_HOME && bundle exec rake'
+  trailblazer:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd trailblazer && bundle install --path $GEM_HOME && bundle exec rake'
+  trailblazer-test:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd trailblazer-test && bundle install --path $GEM_HOME && bundle exec rake'
+  trailblazer-context:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd trailblazer-context && bundle install --path $GEM_HOME && bundle exec rake'
+  trailblazer-activity:
+    docker:
+      -
+        image: 'circleci/ruby:2.6.2-node-browsers'
+        environment:
+          - GEMS_SOURCE=local
+          - GEM_HOME=~/trailblazer/bundle
+    working_directory: ~/trailblazer
+    steps:
+      -
+        attach_workspace:
+          at: ~/
+      -
+        run:
+          name: 'Run Test'
+          command: 'cd trailblazer-activity && bundle install --path $GEM_HOME && bundle exec rake'
+workflows:
+  version: 2
+  build:
+    jobs:
+      - bundle_dependencies
+      -
+        roar:
+          requires:
+            - bundle_dependencies
+      -
+        cells:
+          requires:
+            - bundle_dependencies
+      -
+        cells-erb:
+          requires:
+            - cells
+      -
+        cells-haml:
+          requires:
+            - cells
+      -
+        cells-hamlit:
+          requires:
+            - cells
+      -
+        cells-slim:
+          requires:
+            - cells
+      -
+        cells-rails:
+          requires:
+            - cells-erb
+            - cells-hamlit
+            - cells-haml
+            - cells-slim
+      -
+        reform:
+          requires:
+            - bundle_dependencies
+      -
+        reform-rails:
+          requires:
+            - reform
+      -
+        roar:
+          requires:
+            - bundle_dependencies
+      -
+        roar-jsonapi:
+          requires:
+            - roar
+      -
+        representable:
+          requires:
+            - bundle_dependencies
+      -
+        trailblazer-operation:
+          requires:
+            - bundle_dependencies
+      -
+        trailblazer-macro:
+          requires:
+            - trailblazer-operation
+      -
+        trailblazer-macro-contract:
+          requires:
+            - trailblazer-macro
+      -
+        trailblazer:
+          requires:
+            - trailblazer-operation
+            - trailblazer-macro
+            - trailblazer-macro-contract
+      -
+        trailblazer-test:
+          requires:
+            - bundle_dependencies
+      -
+        trailblazer-context:
+          requires:
+            - bundle_dependencies
+      -
+        trailblazer-activity:
+          requires:
+            - trailblazer-test
+            - trailblazer-context
