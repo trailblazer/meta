@@ -26,8 +26,6 @@ Style/AndOr:
   EnforcedStyle: conditionals
 Style/AutoResourceCleanup:
   Enabled: true
-Style/CollectionMethods:
-  Enabled: true
 Style/Documentation:
   Enabled: false
 Style/EmptyLiteral:
@@ -49,13 +47,6 @@ Style/NumericLiterals:
   Enabled: false
 Style/OptionHash:
   Enabled: true
-Style/PercentLiteralDelimiters:
-  PreferredDelimiters:
-    "%w": "[]"
-    "%W": "[]"
-    "%i": "[]"
-    "%I": "[]"
-    "%r": "()"
 Style/ReturnNil:
   Enabled: true
 Style/SafeNavigation:
@@ -94,8 +85,6 @@ Lint/UnreachableCode:
   Enabled: false
 Lint/Void:
   Enabled: false
-Layout/AlignHash:
-  EnforcedLastArgumentHashStyle: ignore_implicit
 Metrics/AbcSize:
   Max: 25
 Style/LambdaCall:
@@ -111,10 +100,9 @@ Layout/LeadingCommentSpace:
     - 'test/docs/**/*'
 Layout/AlignHash:
   EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
 Style/FrozenStringLiteralComment:
   Enabled: false
-Layout/AlignHash:
-  EnforcedColonStyle: table
 SingleLineMethods:
   Enabled: false
 Style/Lambda:
@@ -132,5 +120,8 @@ Style/PercentLiteralDelimiters:
     "%r": '{}'
     "%w": '[]'
     "%": '{}'
+    "%W": '[]'
+    "%i": '[]'
+    "%I": '[]'
 Style/HashSyntax:
   Enabled: false
