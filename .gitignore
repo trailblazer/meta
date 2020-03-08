@@ -5,3 +5,4 @@ gems.locked
 tmp
 .bundle
 .DS_Store
+*.iml
