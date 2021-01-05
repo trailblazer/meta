@@ -88,3 +88,6 @@
 [submodule "trailblazer-activity-dsl-linear"]
 	path = trailblazer-activity-dsl-linear
 	url = git@github.com:trailblazer/trailblazer-activity-dsl-linear.git
+[submodule "representable"]
+	path = representable
+	url = git@github.com:trailblazer/representable

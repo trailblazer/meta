@@ -1,3 +1,17 @@
+require:
+  - rubocop-minitest
+  - rubocop-performance
 inherit_from:
   - rubocop.yml
-  - .rubocop_todo.yml
+
+Layout/HashAlignment:
+  Enabled: false
+Naming/MethodName:
+  Enabled: false
+Layout/LineLength:
+  Enabled: false
+Naming/MethodParameterName:
+  Enabled: false
+Layout/ExtraSpacing:
+  Enabled: false
+
