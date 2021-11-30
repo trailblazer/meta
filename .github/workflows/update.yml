@@ -1,0 +1,26 @@
+name: Update repository
+
+on:
+  workflow_dispatch:
+
+jobs:
+  updater:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Update submodules
+        run: |
+          git pull --recurse-submodules
+          git submodule update --remote --recursive
+      - name: Configure git author
+        run: |
+          git config user.name "Marissa Miawer"
+          git config user.email "2394703+tardigate[bot]@users.noreply.github.com"
+      - name: commit
+        run: |
+          git add .
+          git commit -am "Auto updated submodule references" && git push || echo "No changes to commit"
