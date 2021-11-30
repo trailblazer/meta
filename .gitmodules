@@ -1,93 +1,124 @@
 [submodule "trailblazer"]
 	path = trailblazer
 	url = git@github.com:trailblazer/trailblazer.git
+	branch = master
 [submodule "trailblazer-rails"]
 	path = trailblazer-rails
 	url = git@github.com:trailblazer/trailblazer-rails
+	branch = master
 [submodule "reform"]
 	path = reform
 	url = git@github.com:trailblazer/reform
+	branch = master
 [submodule "cells"]
 	path = cells
 	url = git@github.com:trailblazer/cells
+	branch = master
 [submodule "cells-slim"]
 	path = cells-slim
 	url = git@github.com:trailblazer/cells-slim
+	branch = master
 [submodule "cells-rails"]
 	path = cells-rails
 	url = git@github.com:trailblazer/cells-rails
+	branch = master
 [submodule "reform-rails"]
 	path = reform-rails
 	url = git@github.com:trailblazer/reform-rails
+	branch = master
 [submodule "roar"]
 	path = roar
 	url = git@github.com:trailblazer/roar
+	branch = master
 [submodule "trailblazer-macro-contract"]
 	path = trailblazer-macro-contract
 	url = git@github.com:trailblazer/trailblazer-macro-contract
+	branch = master
 [submodule "trailblazer-macro"]
 	path = trailblazer-macro
 	url = git@github.com:trailblazer/trailblazer-macro
+	branch = master
 [submodule "trailblazer-transform"]
 	path = trailblazer-transform
 	url = git@github.com:trailblazer/trailblazer-transform
+	branch = master
 [submodule "trailblazer-future"]
 	path = trailblazer-future
 	url = git@github.com:trailblazer/trailblazer-future
+	branch = master
 [submodule "trailblazer-activity"]
 	path = trailblazer-activity
 	url = git@github.com:trailblazer/trailblazer-activity
+	branch = master
 [submodule "trailblazer-operation"]
 	path = trailblazer-operation
 	url = git@github.com:trailblazer/trailblazer-operation
+	branch = master
 [submodule "trailblazer-finder"]
 	path = trailblazer-finder
 	url = git@github.com:trailblazer/trailblazer-finder
+	branch = master
 [submodule "trailblazer-test"]
 	path = trailblazer-test
 	url = git@github.com:trailblazer/trailblazer-test
+	branch = master
 [submodule "trailblazer-context"]
 	path = trailblazer-context
 	url = git@github.com:trailblazer/trailblazer-context
+	branch = master
 [submodule "trailblazer-loader"]
 	path = trailblazer-loader
 	url = git@github.com:trailblazer/trailblazer-loader
+	branch = master
 [submodule "cells-hamlit"]
 	path = cells-hamlit
 	url = git@github.com:trailblazer/cells-hamlit
+	branch = master
 [submodule "trailblazer-endpoint"]
 	path = trailblazer-endpoint
 	url = git@github.com:trailblazer/trailblazer-endpoint
+	branch = master
 [submodule "trailblazer-compat"]
 	path = trailblazer-compat
 	url = git@github.com:trailblazer/trailblazer-compat
+	branch = master
 [submodule "trailblazer-cells"]
 	path = trailblazer-cells
 	url = git@github.com:trailblazer/trailblazer-cells
+	branch = master
 [submodule "trailblazer-generator"]
 	path = trailblazer-generator
 	url = git@github.com:trailblazer/trailblazer-generator
+	branch = master
 [submodule "cells-haml"]
 	path = cells-haml
 	url = git@github.com:trailblazer/cells-haml.git
+	branch = master
 [submodule "cells-erb"]
 	path = cells-erb
 	url = git@github.com:trailblazer/cells-erb
+	branch = master
 [submodule "trailblazer-developer"]
 	path = trailblazer-developer
 	url = git@github.com:trailblazer/trailblazer-developer
+	branch = master
 [submodule "roar-jsonapi"]
 	path = roar-jsonapi
 	url = git@github.com:trailblazer/roar-jsonapi
+	branch = master
 [submodule "rspec-cells"]
 	path = rspec-cells
 	url = git@github.com:trailblazer/rspec-cells
+	branch = master
 [submodule "cells-template"]
 	path = cells-template
 	url = git@github.com:trailblazer/cells-template.git
+	branch = master
 [submodule "trailblazer-activity-dsl-linear"]
 	path = trailblazer-activity-dsl-linear
 	url = git@github.com:trailblazer/trailblazer-activity-dsl-linear.git
+	branch = master
 [submodule "representable"]
 	path = representable
 	url = git@github.com:trailblazer/representable
+	branch = master
