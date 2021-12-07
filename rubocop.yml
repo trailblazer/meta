@@ -103,7 +103,7 @@ Layout/HashAlignment:
   EnforcedColonStyle: table
 Style/FrozenStringLiteralComment:
   Enabled: false
-SingleLineMethods:
+Style/SingleLineMethods:
   Enabled: false
 Style/Lambda:
   EnforcedStyle: literal
