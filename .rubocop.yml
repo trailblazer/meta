@@ -14,4 +14,6 @@ Naming/MethodParameterName:
   Enabled: false
 Layout/ExtraSpacing:
   Enabled: false
+RubyClassMethodNamingConvention:
+  Enabled: false
 
