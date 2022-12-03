@@ -4,6 +4,9 @@ require:
 inherit_from:
   - rubocop.yml
 
+AllCops:
+  NewCops: enable
+
 Layout/HashAlignment:
   Enabled: false
 Naming/MethodName:
@@ -13,7 +16,5 @@ Layout/LineLength:
 Naming/MethodParameterName:
   Enabled: false
 Layout/ExtraSpacing:
-  Enabled: false
-RubyClassMethodNamingConvention:
   Enabled: false
 

@@ -16,8 +16,6 @@ Layout/MultilineAssignmentLayout:
   EnforcedStyle: same_line
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
-Metrics/LineLength:
-  Max: 130
 Metrics/ParameterLists:
   Max: 5
 Naming/VariableNumber:
