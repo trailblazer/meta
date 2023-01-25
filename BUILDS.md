@@ -100,3 +100,9 @@
  - [![CI](https://github.com/trailblazer/trailblazer-transform/actions/workflows/ci_jruby.yml/badge.svg)](https://github.com/trailblazer/trailblazer-transform/actions/workflows/ci_jruby.yml)
  - [![CI](https://github.com/trailblazer/trailblazer-transform/actions/workflows/ci_truffleruby.yml/badge.svg)](https://github.com/trailblazer/trailblazer-transform/actions/workflows/ci_truffleruby.yml)
 
+[trailblazer-cells](https://github.com/trailblazer/trailblazer-cells)
+ - [![CI](https://github.com/trailblazer/trailblazer-cells/actions/workflows/ci.yml/badge.svg)](https://github.com/trailblazer/trailblazer-cells/actions/workflows/ci.yml)
+ - [![CI](https://github.com/trailblazer/trailblazer-cells/actions/workflows/ci_legacy.yml/badge.svg)](https://github.com/trailblazer/trailblazer-cells/actions/workflows/ci_legacy.yml)
+ - [![CI](https://github.com/trailblazer/trailblazer-cells/actions/workflows/ci_jruby.yml/badge.svg)](https://github.com/trailblazer/trailblazer-cells/actions/workflows/ci_jruby.yml)
+ - [![CI](https://github.com/trailblazer/trailblazer-cells/actions/workflows/ci_truffleruby.yml/badge.svg)](https://github.com/trailblazer/trailblazer-cells/actions/workflows/ci_truffleruby.yml)
+
