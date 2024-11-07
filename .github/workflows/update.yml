@@ -3,7 +3,7 @@ name: Update repository
 on:
   workflow_dispatch:
   schedule:
-      - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
 
 jobs:
   updater:
@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout 🛎
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: true
       - name: Update submodules
