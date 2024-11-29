@@ -50,10 +50,6 @@
 	path = trailblazer-macro-contract
 	url = git@github.com:trailblazer/trailblazer-macro-contract
 	branch = master
-[submodule "trailblazer-transform"]
-	path = trailblazer-transform
-	url = git@github.com:trailblazer/trailblazer-transform
-	branch = master
 [submodule "trailblazer-activity"]
 	path = trailblazer-activity
 	url = git@github.com:trailblazer/trailblazer-activity

@@ -26,7 +26,6 @@ Framework Build:
 |[trailblazer-operation](https://github.com/trailblazer/trailblazer-operation)|[![Code Climate](https://codeclimate.com/github/trailblazer/trailblazer-operation.png)](https://codeclimate.com/github/trailblazer/trailblazer-operation)|[![Gem Version](https://badge.fury.io/rb/trailblazer-operation.svg)](http://badge.fury.io/rb/trailblazer-operation)
 |[trailblazer-rails](https://github.com/trailblazer/trailblazer-rails)|[![Code Climate](https://codeclimate.com/github/trailblazer/trailblazer-rails.png)](https://codeclimate.com/github/trailblazer/trailblazer-rails)|[![Gem Version](https://badge.fury.io/rb/trailblazer-rails.svg)](http://badge.fury.io/rb/trailblazer-rails)
 |[trailblazer-test](https://github.com/trailblazer/trailblazer-test)|[![Code Climate](https://codeclimate.com/github/trailblazer/trailblazer-test.png)](https://codeclimate.com/github/trailblazer/trailblazer-test)|[![Gem Version](https://badge.fury.io/rb/trailblazer-test.svg)](http://badge.fury.io/rb/trailblazer-test)
-|[trailblazer-transform](https://github.com/trailblazer/trailblazer-transform)|[![Code Climate](https://codeclimate.com/github/trailblazer/trailblazer-transform.png)](https://codeclimate.com/github/trailblazer/trailblazer-transform)|[![Gem Version](https://badge.fury.io/rb/trailblazer-transform.svg)](http://badge.fury.io/rb/trailblazer-transform)
 
 ```shell
 bundle config set --local local.cells                           ./cells
@@ -57,6 +56,5 @@ bundle config set --local local.trailblazer-macro-contract      ./trailblazer-ma
 bundle config set --local local.trailblazer-operation           ./trailblazer-operation
 bundle config set --local local.trailblazer-rails               ./trailblazer-rails
 bundle config set --local local.trailblazer-test                ./trailblazer-test
-bundle config set --local local.trailblazer-transform           ./trailblazer-transform
 ```
    
