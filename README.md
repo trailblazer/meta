@@ -27,34 +27,14 @@ Framework Build:
 |[trailblazer-rails](https://github.com/trailblazer/trailblazer-rails)|[![Code Climate](https://codeclimate.com/github/trailblazer/trailblazer-rails.png)](https://codeclimate.com/github/trailblazer/trailblazer-rails)|[![Gem Version](https://badge.fury.io/rb/trailblazer-rails.svg)](http://badge.fury.io/rb/trailblazer-rails)
 |[trailblazer-test](https://github.com/trailblazer/trailblazer-test)|[![Code Climate](https://codeclimate.com/github/trailblazer/trailblazer-test.png)](https://codeclimate.com/github/trailblazer/trailblazer-test)|[![Gem Version](https://badge.fury.io/rb/trailblazer-test.svg)](http://badge.fury.io/rb/trailblazer-test)
 
+
+# Usage
+To develop locally, you can use the following commands:
 ```shell
-bundle config set --local local.cells                           ./cells
-bundle config set --local local.cells-erb                       ./cells-erb
-bundle config set --local local.cells-haml                      ./cells-haml
-bundle config set --local local.cells-hamlit                    ./cells-hamlit
-bundle config set --local local.cells-rails                     ./cells-rails
-bundle config set --local local.cells-slim                      ./cells-slim
-bundle config set --local local.cells-template                  ./cells-template
-bundle config set --local local.reform                          ./reform
-bundle config set --local local.reform-rails                    ./reform-rails
-bundle config set --local local.representable                   ./representable
-bundle config set --local local.roar                            ./roar
-bundle config set --local local.roar-jsonapi                    ./roar-jsonapi
-bundle config set --local local.rspec-cells                     ./rspec-cells
-bundle config set --local local.trailblazer                     ./trailblazer
-bundle config set --local local.trailblazer-activity            ./trailblazer-activity
-bundle config set --local local.trailblazer-activity-dsl-linear ./trailblazer-activity-dsl-linear
-bundle config set --local local.trailblazer-cells               ./trailblazer-cells
-bundle config set --local local.trailblazer-context             ./trailblazer-context
-bundle config set --local local.trailblazer-developer           ./trailblazer-developer
-bundle config set --local local.trailblazer-endpoint            ./trailblazer-endpoint
-bundle config set --local local.trailblazer-finder              ./trailblazer-finder
-bundle config set --local local.trailblazer-generator           ./trailblazer-generator
-bundle config set --local local.trailblazer-loader              ./trailblazer-loader
-bundle config set --local local.trailblazer-macro               ./trailblazer-macro
-bundle config set --local local.trailblazer-macro-contract      ./trailblazer-macro-contract
-bundle config set --local local.trailblazer-operation           ./trailblazer-operation
-bundle config set --local local.trailblazer-rails               ./trailblazer-rails
-bundle config set --local local.trailblazer-test                ./trailblazer-test
+make bundle_local
+```
+To remove the local bundle:
+```shell
+make remove_local
 ```
    
